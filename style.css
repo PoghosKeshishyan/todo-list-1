@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Trocchi', serif;
+    transition: .5s all linear;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://st.depositphotos.com/2114317/4741/v/600/depositphotos_47418425-stock-illustration-abstract-vector-background-color-gradient.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+hr {
+    display: none;
+}
+
+/* .....................main > form..................... */
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.main form {
+    padding: 0 0 25px 0;
+}
+
+.main form input {
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.main form button {
+    padding: 5px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(46, 165, 46);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main form button:hover {
+    background-color: rgb(84, 138, 84);
+    color: white;
+}
+
+.main form button:focus {
+    background-color: green;
+    color: white;
+}
+
+/* .....................main > searchBlock..................... */
+.main #searchBlock {
+    width: 315px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 25px auto;
+    padding: 0 15px;
+    background-color: rgb(173, 235, 193);
+    border: 2px ridge rgb(116, 110, 110);
+    border-radius: 5px;
+}
+
+.main #searchBlock input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: rgb(173, 235, 193);
+}
+
+.main #searchBlock i {
+    font-size: 1.4rem;
+    color: rgb(8, 113, 139);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main #searchBlock i:hover {
+    color: rgb(60, 32, 182);
+}
+
+.main #searchBlock i:focus {
+    color: rgb(72, 51, 167);
+}
+
+/* .....................todoList..................... */
+#todoList {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 10px;
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+#todoList::-webkit-scrollbar {
+    width: .2rem;
+}
+
+#todoList::-webkit-scrollbar-track {
+    background: grey;
+    border-radius: .5rem;
+}
+
+#todoList::-webkit-scrollbar-thumb {
+    background: rgb(82, 160, 250);
+    border-radius: .5rem;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: .5rem .5rem .5rem rgb(66, 66, 66);
+}
+
+.todo.active {
+    background-color: rgba(25, 119, 68, 0.521);
+    color: white;
+}
+
+.todo .text {
+    width: 80%;
+    text-align: left;
+}
+
+/* .....................icons..................... */
+.icons i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.icons .fa-check {
+    color: rgb(35, 82, 62);
+}
+
+.icons .fa-trash {
+    color: rgb(182, 13, 13);
+}
+
+/* ..................remove-all, seacrhBtn.................. */
+#removeAll {
+    display: none;
+    margin: 1.5rem auto;
+    padding: .3rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(168, 2, 2);
+    border: 3px ridge rgb(185, 185, 185);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#seacrhBtn {
+    display: none;
+    margin: 1.5rem auto;
+    padding: .3rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(2, 88, 168);
+    border: 3px ridge rgb(185, 185, 185);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ..................media.................. */
+@media (max-width: 360px) {
+    .main #searchBlock {
+        width: 90%;
+    }
+
+    .todo {
+        width: 90%;
+    }
+}
+
+@media (max-width: 370px) {
+    .main #searchBlock {
+        width: 90%;
+    }
+
+    .todo {
+        width: 90%;
+    }
+}
+
+@media (max-width: 380px) {
+    .main #searchBlock {
+        width: 90%;
+    }
+
+    .todo {
+        width: 90%;
+    }
+}
+
+@media (max-width: 390px) {
+    .main #searchBlock {
+        width: 90%;
+    }
+
+    .todo {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .main #searchBlock {
+        width: 90%;
+    }
+
+    .todo {
+        width: 90%;
+    }
+}
